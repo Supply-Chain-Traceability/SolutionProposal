@@ -139,53 +139,50 @@ chosen, and the certificate validator could also become the certificate
 issuer (CA).
 
 ![Use case A](/Media/image1.png)
-<p align="center">*Use case A: Add a new SCA*</p>
+<p align="center">Use case A: Add a new SCA</p>
 
 Use case B1: Add a new product to supply chain
 
 ![Use case B1](/Media/image2.png)
 
-*Use case B1: Add a new product*
+<p align="center">Use case B1: Add a new product</p>
 
 Use case B2: request certificate for product
 
 ![Use case B2](/Media/image3.png)
 
-* Use case B2: Add a new product*
+<p align="center">Use case B2: Add a new product</p>
 
 Use case B3-- Register a new product in SCM
 
 ![Use case B3](/Media/image4.png)
 
-Use case B3 -- Register a new product
+<p align="center">Use case B3 -- Register a new product</p>
 
-Use case C -- Get/Set product attributes
-
-*Use case B3: Register a new product*
 
 Use case C -- Get/Set product attributes
 
 ![](/Media/image5.png)
 
-*Use case C: Get/Set product attributes*
+<p align="center">Use case C: Get/Set product attributes</p>
 
 Use case D -- Get product certificate
 
 ![](/Media/image6.png)
 
-*Use case D: Get product certificate*
+<p align="center">Use case D: Get product certificate</p>
 
 Use case E-- Transform product
 
 ![](/Media/image7.png)
 
-* Use case E: Transform product*
+<p align="center">Use case E: Transform product</p>
 
 Use case F/G-- Transfer ownership to/from
 
 ![](/Media/image8.png)
 
-*Use case F/G: Transfer ownership*
+<p align="center">Use case F/G: Transfer ownership</p>
 
 ***\
 ***
@@ -201,36 +198,38 @@ Detail on SCA and Validation
 
 ![](/Media/image9.png)
 
-* SCA registration and validation*
+<p align="center">SCA registration and validation</p>
 
 Detail on Product registration and transformation
 
 ![](/Media/image10.png)
 
-* Product registration and transformation*
+<p align="center">Product registration and transformation</p>
 
 Detail on transfer of custody and loss of Product
 
 ![](/Media/image11.png)
 
-*Transfer of custody*
+<p align="center">Transfer of custody</p>
 
-![](/Media/image12.png)Detail on Get/Set functions
+Detail on Get/Set functions
 
-* Get/Set functionality*
+![](/Media/image12.png)
+
+<p align="center">Get/Set functionality</p>
 
 # WalliD architecture
 
 WalliD Import certificate
 ![](/Media/image13.png)
 
-*Import certificate architecture*
+<p align="center">Import certificate architecture</p>
 
 WalliD Validate certificate
 
 ![](/Media/image14.png)
 
-* Validate certificate architecture*
+<p align="center">Validate certificate architecture</p>
 
 SCM Certificate Import and Validation
 
@@ -244,11 +243,11 @@ registration of products.
 
 ![](/Media/image15.png)
 
-* Certify product*
+<p align="center">Certify product</p>
 
 ![](/Media/image16.png)
 
-*Certify SCA*
+<p align="center">Certify SCA</p>
 
 Defined Public Key Infrastructure and Setup
 
@@ -269,7 +268,7 @@ identity (distinguished name) of an entity (subscriber).
 
 ![](/Media/image17.png)
 
-*X.509 certificate*
+<p align="center">X.509 certificate</p>
 
 Registration and certification procedures: A Registration Authority (RA)
 receives a request for the digital certificate (CSR) from the subscriber
@@ -281,11 +280,11 @@ keys are made publicly available.
 
 ![](/Media/image18.png)
 
-*PKI certification procedure*
+<p align="center">PKI certification procedure</p>
 
 ![](/Media/image19.png)
 
-*PKI validation procedure*
+<p align="center">PKI validation procedure</p>
 
 The validation step is performed online by the Validation Authority
 (VA). It is possible for a Certification Authority (CA) to merge all 3
@@ -303,7 +302,7 @@ establish traceability for this use case.
 
 ![](/Media/image20.png)
 
-*Use case certificate*
+<p align="center">Use case certificate</p>
 
 The government assigned ID of Bovine (SNIRA ID) is attributed at birth
 by DGAV and stored in Sistema Nacional de Informação e Registo Animal
@@ -327,7 +326,7 @@ GTIN) or SSCC (Serial Shipping Container Code) identifier is required
 The next figure presents the different fields in a SGTIN EPC.
 
 ![](/Media/image21.png)
-*EPC structure*
+<p align="center">EPC structure</p>
 
 In the case of SGTIN it is composed of a GTIN (Global Trade
 Identification Number) plus a serial ID for unique identification of
@@ -349,7 +348,7 @@ viewed in the excerpt below.
 
 ![](/Media/image22.png)
 
-*EPCIS XML sample*
+<p align="center">EPCIS XML sample</p>
 
 It is then clear that the EPCIS data format is not suitable for BC and
 this is thus a further reason to use a much more succinct representation
@@ -381,13 +380,13 @@ the entity responsible needs to run following commands.
 
 ![](/Media/image23.png)
 
-*Root CA certificate commands*
+<p align="center">Root CA certificate commands</p>
 
 For inter/Mediate CA establishment we need to run following commands:
 
 ![](/Media/image24.png)
 
-*Inter/Mediate CA certificate commands*
+<p align="center">Inter/Mediate CA certificate commands</p>
 
 The resulting inter/Mediate.cert.pem will be used to sign the product
 certificate after a certificate signing request is sent from the end
@@ -415,7 +414,7 @@ URI/SNIRA ID/Genealogy ID as follows.
 
 ![](/Media/image25.png)
 
-*CSR configuration file*
+<p align="center">CSR configuration file</p>
 
 Note that to include the product data as a subjectAltName the otherName
 format is used. This is defined in RFC4043 that requires extra data
@@ -426,14 +425,14 @@ sample generated OID was provided via Windows script[^5]. The Producer
 
 ![](/Media/image26.png)
 
-* Certificate Request with Product data*
+<p align="center">Certificate Request with Product data</p>
 
 Now at the Inter/Mediate CA "Mirandesa" we use following procedure to
 issue the certificate.
 
 ![](/Media/image27.png)
 
-*Product Certificate*
+<p align="center">Product Certificate</p>
 
 This valid certificate is now ready to be used in the SCM over BC,
 imported to WalliD provider and supplied to the SCM certificate
@@ -445,7 +444,7 @@ The complete revocation workflow is as follows:
 
 ![](/Media/image28.png)
 
-* Revoke product certificate*
+<p align="center">Revoke product certificate</p>
 
 The now revoked certificate is added to the CRL and can be accessed by
 any interested party (e.g., the SCM certificate validator).
