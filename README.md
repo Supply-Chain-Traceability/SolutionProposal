@@ -138,61 +138,55 @@ Governmental/Organizational agencies. In the case of a centralized SCM
 chosen, and the certificate validator could also become the certificate
 issuer (CA).
 
-![image1](/Media/image1.png)
+![Use case A](/Media/image1.png)
 
-*Figure 4. Use case A: Add a new SCA*
+* Use case A: Add a new SCA*
 
 Use case B1: Add a new product to supply chain
 
-![](/Media/image2.png){width="6.506944444444445in"
-height="1.6131944444444444in"}
+![Use case B1](/Media/image2.png)
 
-*Figure 5. Use case B1: Add a new product*
+* Use case B1: Add a new product*
 
 Use case B2: request certificate for product
 
-![](/Media/image3.png){width="6.508333333333334in"
-height="1.7284722222222222in"}
+![Use case B2](/Media/image3.png)
 
-*Figure 6. Use case B2: Add a new product*
+* Use case B2: Add a new product*
 
 Use case B3-- Register a new product in SCM
 
-![](/Media/image4.png){width="6.509027777777778in"
-height="1.9569444444444444in"}
+![Use case B3](/Media/image4.png)
 
-Figure 7 -- Use case B3 -- Register a new product
-
-Use case C -- Get/Set product attributes
-
-*Figure 7. Use case B3: Register a new product*
+Use case B3 -- Register a new product
 
 Use case C -- Get/Set product attributes
 
-![](/Media/image5.png){width="4.741929133858267in"
-height="1.5131944444444445in"}
+*Use case B3: Register a new product*
 
-*Figure 8. Use case C: Get/Set product attributes*
+Use case C -- Get/Set product attributes
+
+![](/Media/image5.png)
+
+*Use case C: Get/Set product attributes*
 
 Use case D -- Get product certificate
 
-![](/Media/image6.png){width="6.513888888888889in"
-height="1.4201388888888888in"}
+![](/Media/image6.png)
 
-*Figure 9. Use case D: Get product certificate*
+*Use case D: Get product certificate*
 
 Use case E-- Transform product
 
-![](/Media/image7.png){width="6.5in" height="1.7590277777777779in"}
+![](/Media/image7.png)
 
-*Figure 10. Use case E: Transform product*
+* Use case E: Transform product*
 
 Use case F/G-- Transfer ownership to/from
 
-![](/Media/image8.png){width="6.506944444444445in"
-height="1.2201388888888889in"}
+![](/Media/image8.png)
 
-*Figure 11. Use case F/G: Transfer ownership*
+*Use case F/G: Transfer ownership*
 
 ***\
 ***
@@ -206,42 +200,38 @@ This code compiles for solidity version 0.5.11.
 
 Detail on SCA and Validation
 
-![](/Media/image9.png){width="6.893931539807524in"
-height="3.3781517935258094in"}
+![](/Media/image9.png)
 
-*Figure 16. SCA registration and validation*
+* SCA registration and validation*
 
 Detail on Product registration and transformation
 
-![](/Media/image10.png){width="6.5in" height="2.9972222222222222in"}
+![](/Media/image10.png)
 
-*Figure 17. Product registration and transformation*
+* Product registration and transformation*
 
 Detail on transfer of custody and loss of Product
 
-![](/Media/image11.png){width="6.448305993000875in"
-height="3.134027777777778in"}
+![](/Media/image11.png)
 
-*Figure 18. Transfer of custody*
+*Transfer of custody*
 
-![](/Media/image12.png){width="6.506944444444445in"
-height="2.4368055555555554in"}Detail on Get/Set functions
+![](/Media/image12.png)Detail on Get/Set functions
 
-*Figure 19. Get/Set functionality*
+* Get/Set functionality*
 
 # WalliD architecture
 
 WalliD Import certificate
-![](/Media/image13.png){width="6.506944444444445in"
-height="3.0069444444444446in"}
+![](/Media/image13.png)
 
-*Figure 14. Import certificate architecture*
+*Import certificate architecture*
 
 WalliD Validate certificate
 
-![](/Media/image14.png){width="6.506944444444445in" height="3.19375in"}
+![](/Media/image14.png)
 
-*Figure 15. Validate certificate architecture*
+* Validate certificate architecture*
 
 SCM Certificate Import and Validation
 
@@ -253,15 +243,13 @@ ImportID and following the correct import RequestKYC/RequestKYP. The
 same pattern is used for both the registration of SCAs and the
 registration of products.
 
-![](/Media/image15.png){width="4.100519466316711in"
-height="3.010538057742782in"}
+![](/Media/image15.png)
 
-*Figure 12. Certify product*
+* Certify product*
 
-![](/Media/image16.png){width="4.035332458442695in"
-height="3.89924321959755in"}
+![](/Media/image16.png)
 
-*Figure 13. Certify SCA*
+*Certify SCA*
 
 Defined Public Key Infrastructure and Setup
 
@@ -280,10 +268,9 @@ subscriber when the digital signature (PKC) is valid and the 3rd party
 trusts the issuer (CA). A certificate binds the public key with the
 identity (distinguished name) of an entity (subscriber).
 
-![](/Media/image17.png){width="6.509027777777778in"
-height="2.017361111111111in"}
+![](/Media/image17.png)
 
-*Figure 20. X.509 certificate*
+*X.509 certificate*
 
 Registration and certification procedures: A Registration Authority (RA)
 receives a request for the digital certificate (CSR) from the subscriber
@@ -293,15 +280,13 @@ a certificate based on that information using the information provided
 by the user and its private key. The certificates and the CA's public
 keys are made publicly available.
 
-![](/Media/image18.png){width="4.183438320209974in"
-height="2.7647069116360456in"}
+![](/Media/image18.png)
 
-*Figure 21. PKI certification procedure*
+*PKI certification procedure*
 
-![](/Media/image19.png){width="3.9471073928258966in"
-height="2.7699004811898513in"}
+![](/Media/image19.png)
 
-*Figure 22. PKI validation procedure*
+*PKI validation procedure*
 
 The validation step is performed online by the Validation Authority
 (VA). It is possible for a Certification Authority (CA) to merge all 3
@@ -317,10 +302,9 @@ certificate ID. These 3 documents presented were collected at the local
 supply chain exemplify the main data and attributes that are required to
 establish traceability for this use case.
 
-![](/Media/image20.png){width="4.707979002624672in"
-height="3.6277066929133857in"}
+![](/Media/image20.png)
 
-*Figure 23. Use case certificate*
+*Use case certificate*
 
 The government assigned ID of Bovine (SNIRA ID) is attributed at birth
 by DGAV and stored in Sistema Nacional de Informação e Registo Animal
@@ -343,8 +327,8 @@ granularity a EPC: Electronic Product Code -- GS1 SGTIN (Serialized
 GTIN) or SSCC (Serial Shipping Container Code) identifier is required
 The next figure presents the different fields in a SGTIN EPC.
 
-![](/Media/image21.png){width="6.506944444444445in"
-height="3.173611111111111in"}*Figure 24. EPC structure*
+![](/Media/image21.png)
+*EPC structure*
 
 In the case of SGTIN it is composed of a GTIN (Global Trade
 Identification Number) plus a serial ID for unique identification of
@@ -364,10 +348,9 @@ rising and progressively necessitating cloud and big data. The volume of
 data is consequence of the verbosity of the standard (XML) as can be
 viewed in the excerpt below.
 
-![](/Media/image22.png){width="4.706944444444445in"
-height="2.4138888888888888in"}
+![](/Media/image22.png)
 
-*Figure 25. EPCIS XML sample*
+*EPCIS XML sample*
 
 It is then clear that the EPCIS data format is not suitable for BC and
 this is thus a further reason to use a much more succinct representation
@@ -397,17 +380,15 @@ establish the PKI, we define the root CA, then the inter/Mediate CA and,
 finally, the Producer\'s certificate requests. For CA root establishment
 the entity responsible needs to run following commands.
 
-![](/Media/image23.png){width="6.509027777777778in"
-height="0.9826388888888888in"}
+![](/Media/image23.png)
 
-*Figure 26. Root CA certificate commands*
+*Root CA certificate commands*
 
 For inter/Mediate CA establishment we need to run following commands:
 
-![](/Media/image24.png){width="6.509722222222222in"
-height="1.5013888888888889in"}
+![](/Media/image24.png)
 
-*Figure 27. Inter/Mediate CA certificate commands*
+*Inter/Mediate CA certificate commands*
 
 The resulting inter/Mediate.cert.pem will be used to sign the product
 certificate after a certificate signing request is sent from the end
@@ -433,10 +414,9 @@ generates a certificate request using: open ssl genrsa -aes256 \\ - out
 is practical to use a configuration file which includes the EPC Tag
 URI/SNIRA ID/Genealogy ID as follows.
 
-![](/Media/image25.png){width="6.340265748031496in"
-height="3.4935050306211726in"}
+![](/Media/image25.png)
 
-*Figure 28. CSR configuration file*
+*CSR configuration file*
 
 Note that to include the product data as a subjectAltName the otherName
 format is used. This is defined in RFC4043 that requires extra data
@@ -445,18 +425,16 @@ Profile Specification[^4] . In the case of SNIRA and PDO IDs a private
 sample generated OID was provided via Windows script[^5]. The Producer
 "Agrogranjo" can create a CSR as follows:
 
-![](/Media/image26.png){width="6.506944444444445in"
-height="2.713888888888889in"}
+![](/Media/image26.png)
 
-*Figure 29. Certificate Request with Product data*
+* Certificate Request with Product data*
 
 Now at the Inter/Mediate CA "Mirandesa" we use following procedure to
 issue the certificate.
 
-![](/Media/image27.png){width="6.264635826771654in"
-height="3.245952537182852in"}
+![](/Media/image27.png)
 
-*Figure 30. Product Certificate*
+*Product Certificate*
 
 This valid certificate is now ready to be used in the SCM over BC,
 imported to WalliD provider and supplied to the SCM certificate
@@ -466,10 +444,9 @@ Certificate revocation
 
 The complete revocation workflow is as follows:
 
-![](/Media/image28.png){width="6.406104549431321in"
-height="3.3609831583552054in"}
+![](/Media/image28.png)
 
-*Figure 31 -- Revoke product certificate*
+* Revoke product certificate*
 
 The now revoked certificate is added to the CRL and can be accessed by
 any interested party (e.g., the SCM certificate validator).
