@@ -139,7 +139,7 @@ chosen, and the certificate validator could also become the certificate
 issuer (CA).
 
 ![Use case A](/Media/image1.png)
-<center>*Use case A: Add a new SCA*</center>
+<p align="center">*Use case A: Add a new SCA*</p>
 
 Use case B1: Add a new product to supply chain
 
