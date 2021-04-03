@@ -138,7 +138,7 @@ Governmental/Organizational agencies. In the case of a centralized SCM
 chosen, and the certificate validator could also become the certificate
 issuer (CA).
 
-![](/Media/image1.png){width="6.506944444444445in"
+![](./Media/image1.png){width="6.506944444444445in"
 height="2.4270833333333335in"}
 
 *Figure 4. Use case A: Add a new SCA*
