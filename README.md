@@ -20,11 +20,10 @@ The architecture is described in terms of:
 
 # Proposed SCM functions and Use Cases
 
-##  {#section .list-paragraph}
 
 ## SCM Functions
 
-**A. Register SCA**
+### A. Register SCA
 
 Any authorized SCA can register itself with the Supply Chain SC. To
 register a SCA must provide proof of its identity that has been made
@@ -33,7 +32,7 @@ objective is to provide decentralized authentication and avoid
 impersonation of the SCA. The SCA ID certificates are stored via
 function H. and validated via function I. (reusing WalliD architecture).
 
-**B. Register Product**
+### B. Register Product
 
 Any previously authorized SCA can register a product token with the
 Supply Chain Smart Contract. The objective is to allow for the minimum
@@ -47,12 +46,12 @@ a storage provider (a specific role in the WalliD architecture) in the
 same way as for the SCA certificate and that SCA will remain the product
 certificate owner.
 
-**C. Get/Set Product Attributes**
+### C. Get/Set Product Attributes
 
 For an owned product it is possible to get/set some of the product token
 attributes namely: ownership, location and custody state.
 
-**D. Get Product Certificate**
+### D. Get Product Certificate
 
 The current SCA product owner can request the SCA product certificate
 owner to retrieve the certificate from StoreId Provider and provide it
@@ -63,25 +62,25 @@ Manager as proxy to request to view the product certificate. This is the
 only SCM functionality that is provided to non SCAs (via SCM Manager
 proxy).
 
-**E. Transform Product**
+### E. Transform Product
 
 A SCA with transformation role can transform an existing product, copy
 the existing product attributes to a new product (new EPC) thus updating
 the inventory of products.
 
-**F. Transfer ownership to another SCA**
+### F. Transfer ownership to another SCA
 
 A SCA with ownership of a product can tentatively change ownership to a
 SCA (destination address is set), waiting for other SCA to commit
 (logistics handoff).
 
-**G. Receive ownership from**
+### G. Receive ownership from
 
 The previous process is only complete when the receiver SCA calls
 "Transfer ownership from" and the sender and receiver BC address are
 verified.
 
-**H. Import ID and Certificates**
+### H. Import ID and Certificates
 
 Operates over WalliD SC and architecture - these functions operate using
 events that are sent by the SC in 2 occasions: when a SCA registers and
@@ -91,7 +90,7 @@ actions from the SC to the SCA that has the certificate (see Figure 14
 and validation) and ends when the certificates are stored in "Store
 Provider" and validated in SC by "Certificate Validator".
 
-**I. Provide ID and Certificates for validation**
+### I. Provide ID and Certificates for validation
 
 Operates over WalliD SC and architecture - these functions operate using
 the events "perform KYC" /" perform KYP" after the previous import. KYC
@@ -100,7 +99,7 @@ where the identity is verified either for user or for product. These
 flows end when "Certificate Validator" validates either the SCA or EPC
 (Electronic Product Code).
 
-**J. Validate Certificates**
+### J. Validate Certificates
 
 The SCM "Certificate Validator" must perform the hashing algorithm and
 verify the provided ID and certificate information and chain of trust
@@ -109,7 +108,7 @@ registered SCA has a true identity and thus can operate on the supply
 chain. This also applies to a product so that the product identity
 provided is certified and its certificate is available to be viewed.
 
-K. View EPC Certificate
+### K. View EPC Certificate
 
 SCAs and customers can use the Certificate Validator website address and
 call Get Product Certificates (EPC). In the case of customers, they use
@@ -125,7 +124,7 @@ certificates see Appendix 10 - PKI setup.
 
 ## Proposed SCM Use cases
 
-**Use case A: Add a new SCA to the supply chain management system.**
+### Use case A: Add a new SCA to the supply chain management system. 
 
 A SCA must firstly authenticate himself before being able to interact
 with the SCM. For this he must register with a trusted entity that makes
@@ -141,13 +140,13 @@ issuer (CA).
 ![Use case A](/Media/image1.png)
 <p align="center">Use case A: Add a new SCA</p>
 
-Use case B1: Add a new product to supply chain
+### Use case B1: Add a new product to supply chain
 
 ![Use case B1](/Media/image2.png)
 
 <p align="center">Use case B1: Add a new product</p>
 
-Use case B2: request certificate for product
+**Use case B2: request certificate for product**
 
 ![Use case B2](/Media/image3.png)
 
