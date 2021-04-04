@@ -146,72 +146,70 @@ issuer (CA).
 
 <p align="center">Use case B1: Add a new product</p>
 
-**Use case B2: request certificate for product**
+### Use case B2: request certificate for product
 
 ![Use case B2](/Media/image3.png)
 
 <p align="center">Use case B2: Add a new product</p>
 
-Use case B3-- Register a new product in SCM
+### Use case B3-- Register a new product in SCM
 
 ![Use case B3](/Media/image4.png)
 
 <p align="center">Use case B3 -- Register a new product</p>
 
 
-Use case C -- Get/Set product attributes
+### Use case C -- Get/Set product attributes
 
 ![](/Media/image5.png)
 
 <p align="center">Use case C: Get/Set product attributes</p>
 
-Use case D -- Get product certificate
+### Use case D -- Get product certificate
 
 ![](/Media/image6.png)
 
 <p align="center">Use case D: Get product certificate</p>
 
-Use case E-- Transform product
+### Use case E-- Transform product
 
 ![](/Media/image7.png)
 
 <p align="center">Use case E: Transform product</p>
 
-Use case F/G-- Transfer ownership to/from
+### Use case F/G-- Transfer ownership to/from
 
 ![](/Media/image8.png)
 
 <p align="center">Use case F/G: Transfer ownership</p>
 
-***\
-***
 
-# Ethereum Smart Contract
+## Ethereum Smart Contract
 
 The most updated version and complete SC code is available at:
 <https://github.com/prgazevedo/DLT_Masters/tree/master/SCM_SmartContracts>.
 
 This code compiles for solidity version 0.5.11.
 
-Detail on SCA and Validation
+### Detail on SCA and Validation
 
 ![](/Media/image9.png)
 
 <p align="center">SCA registration and validation</p>
 
-Detail on Product registration and transformation
+### Detail on Product registration and transformation
 
 ![](/Media/image10.png)
 
 <p align="center">Product registration and transformation</p>
 
-Detail on transfer of custody and loss of Product
+### Detail on transfer of custody and loss of Product
 
 ![](/Media/image11.png)
 
 <p align="center">Transfer of custody</p>
 
-Detail on Get/Set functions
+### Detail on Get/Set functions
 
 ![](/Media/image12.png)
 
@@ -219,18 +217,18 @@ Detail on Get/Set functions
 
 # WalliD architecture
 
-WalliD Import certificate
+## WalliD Import certificate
 ![](/Media/image13.png)
 
 <p align="center">Import certificate architecture</p>
 
-WalliD Validate certificate
+## WalliD Validate certificate
 
 ![](/Media/image14.png)
 
 <p align="center">Validate certificate architecture</p>
 
-SCM Certificate Import and Validation
+## SCM Certificate Import and Validation
 
 To import and validate the certificates the SCM solution interacts with
 the WalliD architecture for 2 use cases: import of certificates into the
@@ -248,8 +246,9 @@ registration of products.
 
 <p align="center">Certify SCA</p>
 
-Defined Public Key Infrastructure and Setup
+# Defined Public Key Infrastructure and Setup
 
+## PKI Components 
 The main components of a PKI are Public Key Certificates and Certificate
 Authorities. PKC - public key certificate, also known as a digital
 certificate or identity certificate, is an electronic document used to
@@ -268,6 +267,8 @@ identity (distinguished name) of an entity (subscriber).
 ![](/Media/image17.png)
 
 <p align="center">X.509 certificate</p>
+
+## PKI Registration and Certification
 
 Registration and certification procedures: A Registration Authority (RA)
 receives a request for the digital certificate (CSR) from the subscriber
@@ -289,9 +290,8 @@ The validation step is performed online by the Validation Authority
 (VA). It is possible for a Certification Authority (CA) to merge all 3
 functionalities.
 
-# Proposed certificate generation, import and validation
 
-PDO Use case example and generation
+# PDO Use case example and generation
 
 In the next figure is presented the linkage between the livestock
 (bovine) government assigned ID and the PDO organization assigned
@@ -317,7 +317,7 @@ butcher or supermarket) or a prepared meal at a restaurant or hotel.
 Each of the SCAs receive the PDO paper certificate together with the
 invoice on each carcass.
 
-EPC detail
+# EPC detail
 
 In order to have unique global identification at instance level
 granularity a EPC: Electronic Product Code -- GS1 SGTIN (Serialized
@@ -353,7 +353,7 @@ It is then clear that the EPCIS data format is not suitable for BC and
 this is thus a further reason to use a much more succinct representation
 in the tokenization of products as single EPCs in the proposed SCM SC.
 
-PKI setup
+# PKI setup
 
 In order to provide products certificates a PKI needs to be setup. It is
 recommended that an hierarchical PKI structure is setup in order to
@@ -391,7 +391,7 @@ The resulting inter/Mediate.cert.pem will be used to sign the product
 certificate after a certificate signing request is sent from the end
 user "Agrogranjo".
 
-Product certificate generation
+## Product certificate generation
 
 As described in order to univocally associate the PDO certificate with
 the product identification the digital certificate should include: a EPC
@@ -437,7 +437,7 @@ This valid certificate is now ready to be used in the SCM over BC,
 imported to WalliD provider and supplied to the SCM certificate
 validator for verification.
 
-Certificate revocation
+## Certificate revocation
 
 The complete revocation workflow is as follows:
 
